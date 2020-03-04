@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <title>Đăng nhập</title>
+    <head> 
+        <style>
+        h2{
+            color: brown;
+            text-align: center;
+        }
+        table, th,td{
+            border: 1px solid brown;
+            padding: 5px;
+            border-collapse: collapse;
+            background-color: darkcyan;
+        }
+        </style>
+    </head>
+<body>
+<h2>Đăng Nhập</h2>
+<table>
+    <tr>
+        <th>Mã người dùng</th>
+        <th><input type="text"></th>
+    </tr>
+    <tr>
+        <th>Mật khẩu</th>
+        <th><input type="password"></th>
+
+    </tr>
+    <tr>
+        <th colspan="2"><input type="submit" value="Xác nhận" 
+            onclick="onSubmit()">
+            <p style="display: none"> bạn dăng nhập thành công</p>
+            ></th>
+    </tr>
+
+</table>
+
+<script>
+    function onSubmit(){
+        event.preventDefault();
+        alert('bạn đăng nhập thành công')
+    }
+</script>
+</body>
+</html>

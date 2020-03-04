@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <style>
+        
+        </style>
+    </head>
+<body>
+    <ul style="list-style-type: ;">
+        <li> item A</li>
+    </ul>
+<form action="server.js" method="post">
+    <fieldset>
+    <label for="">user name</label>
+    <input type="text " name="user name" id="username">
+    <br><br>
+    <label for="">password</label>
+    <input type="text" name="password" id="password">
+    <br><br>
+    <input type="checkbox" id="remmber">
+    <label for="remmber"> Nhớ phiên đăng nhập</label>
+    <br><br>
+    <label for="male">nam</label>
+    <input type="radio" id="mele" name="sex">
+    <label for="female">Nữ</label>
+    <input type="radio" id="female" name="sex">
+    <br><br>
+    <select name="students" id="students">
+        <optgroup label="nữ">
+        <option value="t3hsi"> huyen</option>
+        <option value="t3hs2"> thuong</option>
+    </optgroup>
+    </select>
+    <label for="date-of-birth"> ngày sinh</label>
+    <input type="number" id="date-of-birth" name="">
+<br><br>
+<input type="submit" value="Xác nhận" 
+onclick="onSubmit()">
+<p style="display: none"> bạn dăng nhập thành công</p>
+
+</fieldset>
+</form>
+<script>
+    function onSubmit(){
+        event.preventDefault();
+        alert('hello class')
+    }
+</script>
+<audio src=""></audio>
+</body>
+</html>
